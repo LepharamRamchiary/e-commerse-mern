@@ -2,15 +2,16 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import orderRoutes from './routes/sales.routes.js';
+import 'dotenv/config'
 
 const app = express();
 app.use(cors())
 app.use(express.json())
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 
 // Correct the connection string
-const mongoURI = "mongodb+srv://db_user_read:LdmrVA5EDEv4z3Wr@cluster0.n10ox.mongodb.net/RQ_Analytics?retryWrites=true&w=majority&appName=Cluster0";
+const mongoURI = process.env.MONGODB_URL;
 
 mongoose.connect(mongoURI)
     .then(() => {
