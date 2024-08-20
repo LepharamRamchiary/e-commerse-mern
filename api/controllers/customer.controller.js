@@ -96,3 +96,24 @@ export const getRepeatCustomersOverTime = async (req, res) => {
         res.status(500).send(error.message);
     }
 };
+
+
+export const getGeographicalDistribution = async (req, res) => {
+    try {
+        const cityDistribution = await ShopifyCustomer.aggregate([
+            {
+                $group: {
+                    _id: "$default_address.city",
+                    count: { $sum: 1 } 
+                }
+            },
+            {
+                $sort: { count: -1 }
+            }
+        ]);
+
+        res.json(cityDistribution);
+    } catch (error) {
+        res.status(500).send(error.message);
+    }
+};
