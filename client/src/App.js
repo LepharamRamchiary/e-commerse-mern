@@ -1,11 +1,11 @@
-import Home from "./pages/Home"
+import Home from "./pages/Home.jsx"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Sales from "./components/Sales"
-import SalesGrowth from "./components/SalesGrowth";
-import NewCustomers from "./components/NewCustomers";
-import RepeatCustomers from "./components/RepeatCustomers";
-import GeographicalDistribution from "./components/GeographicalDistribution";
-import Clv from "./components/Clv";
+import Sales from "./components/Sales.jsx"
+import SalesGrowth from "./components/SalesGrowth.jsx";
+import NewCustomers from "./components/NewCustomers.jsx";
+import RepeatCustomers from "./components/RepeatCustomers.jsx";
+import GeographicalDistribution from "./components/GeographicalDistribution.jsx";
+import Clv from "./components/Clv.jsx";
 import './App.css';
 
 function App() {
