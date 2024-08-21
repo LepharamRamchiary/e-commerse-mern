@@ -13,7 +13,7 @@ const NewCustomersOverTimeChart = () => {
     useEffect(() => {
         const fetchNewCustomersData = async () => {
             try {
-                const response = await axios.get(`http://localhost:8000/api/customers/new-customers-over-time?interval=${interval}`);
+                const response = await axios.get(`https://e-commerse-mern-1.onrender.com/api/customers/new-customers-over-time?interval=${interval}`);
                 setNewCustomersData(response.data);
             } catch (error) {
                 console.error('Error fetching new customers data', error);
