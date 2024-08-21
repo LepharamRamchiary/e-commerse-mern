@@ -20,7 +20,7 @@ ChartJS.register(
   LinearScale
 );
 
-const RepeatCustomersOverTimeChart = () => {
+const RepeatCustomers = () => {
   const [repeatCustomersData, setRepeatCustomersData] = useState([]);
   const [interval, setInterval] = useState("monthly");
 
@@ -93,4 +93,4 @@ const RepeatCustomersOverTimeChart = () => {
   );
 };
 
-export default RepeatCustomersOverTimeChart;
+export default RepeatCustomers;
