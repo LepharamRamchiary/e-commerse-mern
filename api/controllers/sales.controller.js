@@ -79,7 +79,7 @@ export const getSalesGrowthRate = async (req, res) => {
             { $sort: { "_id.year": 1, "_id.month": 1, "_id.day": 1, "_id.quarter": 1 } }
         ]);
 
-        // Calculate growth rate
+        
         const growthRate = salesData.map((data, index, array) => {
             if (index === 0) return { ...data, growthRate: 0 }; 
             const previousTotalSales = array[index - 1].totalSales;

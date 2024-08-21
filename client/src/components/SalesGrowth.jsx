@@ -11,7 +11,7 @@ import {
   LinearScale,
 } from "chart.js";
 
-// Register the necessary components for Chart.js
+
 ChartJS.register(
   Title,
   Tooltip,
@@ -23,7 +23,7 @@ ChartJS.register(
 
 const SalesGrowth = () => {
   const [growthData, setGrowthData] = useState([]);
-  const [interval, setInterval] = useState("monthly"); // Default interval
+  const [interval, setInterval] = useState("monthly"); 
 
   useEffect(() => {
     const fetchGrowthData = async () => {
@@ -38,10 +38,10 @@ const SalesGrowth = () => {
     };
 
     fetchGrowthData();
-  }, [interval]); // Refetch data when interval changes
+  }, [interval]); 
 
   if (!growthData || growthData.length === 0) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center items-center">Loading...</div>;
   }
 
   const chartData = {

@@ -24,7 +24,7 @@ const NewCustomersOverTimeChart = () => {
     }, [interval]);
 
     if (!newCustomersData || newCustomersData.length === 0) {
-        return <div>Loading...</div>;
+        return <div className="flex justify-center items-center">Loading...</div>;
     }
 
     const chartData = {

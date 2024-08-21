@@ -39,7 +39,7 @@ const GeographicalDistribution = () => {
   }, []);
 
   if (!cityData || cityData.length === 0) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center items-center">Loading...</div>;
   }
 
   const chartData = {
@@ -80,6 +80,9 @@ const GeographicalDistribution = () => {
 
   return (
     <div className="md:p-6">
+      <a className="underline cursor-pointer" href="/">
+        Go Back
+      </a>
       <h2 className="md:text-xl">Geographical Distribution of Customers</h2>
       <Bar data={chartData} options={options} />
     </div>

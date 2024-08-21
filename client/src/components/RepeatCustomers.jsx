@@ -40,7 +40,7 @@ const RepeatCustomers = () => {
   }, [interval]);
 
   if (!repeatCustomersData || repeatCustomersData.length === 0) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center items-center">Loading...</div>;
   }
 
   const chartData = {

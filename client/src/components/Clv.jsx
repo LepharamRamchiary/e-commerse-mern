@@ -11,7 +11,6 @@ import {
   LinearScale,
 } from "chart.js";
 
-// Register necessary components for Chart.js
 ChartJS.register(
   Title,
   Tooltip,
@@ -40,7 +39,7 @@ const Clv = () => {
   }, []);
 
   if (!clvData || clvData.length === 0) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center items-center">Loading...</div>;
   }
 
   const chartData = {
