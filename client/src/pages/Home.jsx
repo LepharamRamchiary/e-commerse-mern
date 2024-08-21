@@ -10,7 +10,7 @@ function Home() {
             <div className='flex flex-col w-full md:items-center  bg-gray-400 min-h-screen gap-3 cursor-pointer p-6 text-white md:text-2xl'>
                 <a href="/sales">Total Sales Over Time</a>
                 <a href="/salesgrowth">Sales Growth Rate Over Time</a>
-                <a href="#">New Customers Added Over Time</a>
+                <a href="/newcustomers">New Customers Added Over Time</a>
                 <a href="#">Number of Repeat Customers</a>
                 <a href="#">Geographical Distribution of Customers</a>
                 <a href="#">Geographical Distribution of Customers</a>
