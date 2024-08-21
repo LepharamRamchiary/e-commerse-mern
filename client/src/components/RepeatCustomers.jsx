@@ -28,7 +28,7 @@ const RepeatCustomers = () => {
     const fetchRepeatCustomersData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/customers/repeat-customers-over-time?interval=${interval}`
+          `https://data-visualization-backend-grts.onrender.com/api/customers/repeat-customers-over-time?interval=${interval}`
         );
         setRepeatCustomersData(response.data);
       } catch (error) {

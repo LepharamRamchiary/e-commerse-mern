@@ -30,7 +30,7 @@ const Sales = () => {
     const fetchSalesData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/sales/sales-over-time?interval=${interval}`
+          `https://data-visualization-backend-grts.onrender.com/api/sales/sales-over-time?interval=${interval}`
         );
         setSalesData(response.data);
       } catch (error) {

@@ -28,7 +28,7 @@ const NewCustomersOverTimeChart = () => {
     const fetchNewCustomersData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/customers/new-customers-over-time?interval=${interval}`
+          `https://data-visualization-backend-grts.onrender.com/api/customers/new-customers-over-time?interval=${interval}`
         );
         setNewCustomersData(response.data);
       } catch (error) {

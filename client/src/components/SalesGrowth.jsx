@@ -28,7 +28,7 @@ const SalesGrowth = () => {
     const fetchGrowthData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/sales/sales-growth-rate?interval=${interval}`
+          `https://data-visualization-backend-grts.onrender.com/api/sales/sales-growth-rate?interval=${interval}`
         );
         setGrowthData(response.data);
       } catch (error) {

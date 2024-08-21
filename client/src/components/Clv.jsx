@@ -27,7 +27,7 @@ const Clv = () => {
     const fetchCLVData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/customers/clv-by-cohorts"
+          "https://data-visualization-backend-grts.onrender.com/api/customers/clv-by-cohorts"
         );
         setClvData(response.data);
       } catch (error) {

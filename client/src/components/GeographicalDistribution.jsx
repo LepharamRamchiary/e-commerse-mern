@@ -27,7 +27,7 @@ const GeographicalDistribution = () => {
     const fetchCityData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/customers/geographical-distribution"
+          "https://data-visualization-backend-grts.onrender.com/api/customers/geographical-distribution"
         );
         setCityData(response.data);
       } catch (error) {
