@@ -28,7 +28,7 @@ const RepeatCustomers = () => {
     const fetchRepeatCustomersData = async () => {
       try {
         const response = await axios.get(
-          `https://e-commerse-mern-1.onrender.com/api/customers/repeat-customers-over-time?interval=${interval}`
+          `http://localhost:8000/api/customers/repeat-customers-over-time?interval=${interval}`
         );
         setRepeatCustomersData(response.data);
       } catch (error) {
@@ -53,6 +53,8 @@ const RepeatCustomers = () => {
         return `Q${item._id.quarter} ${item._id.year}`;
       } else if (interval === "yearly") {
         return `${item._id.year}`;
+      } else {
+        return "";
       }
     }),
     datasets: [

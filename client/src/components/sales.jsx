@@ -30,7 +30,7 @@ const Sales = () => {
     const fetchSalesData = async () => {
       try {
         const response = await axios.get(
-          `https://e-commerse-mern-1.onrender.com/api/sales/sales-over-time?interval=${interval}`
+          `http://localhost:8000/api/sales/sales-over-time?interval=${interval}`
         );
         setSalesData(response.data);
       } catch (error) {
@@ -55,6 +55,8 @@ const Sales = () => {
         return `Q${item._id.quarter}/${item._id.year}`;
       } else if (interval === "yearly") {
         return `${item._id.year}`;
+      } else {
+        return "";
       }
     }),
     datasets: [
