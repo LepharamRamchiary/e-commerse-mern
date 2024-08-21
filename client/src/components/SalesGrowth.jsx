@@ -11,7 +11,6 @@ import {
   LinearScale,
 } from "chart.js";
 
-
 ChartJS.register(
   Title,
   Tooltip,
@@ -23,7 +22,7 @@ ChartJS.register(
 
 const SalesGrowth = () => {
   const [growthData, setGrowthData] = useState([]);
-  const [interval, setInterval] = useState("monthly"); 
+  const [interval, setInterval] = useState("monthly");
 
   useEffect(() => {
     const fetchGrowthData = async () => {
@@ -38,7 +37,7 @@ const SalesGrowth = () => {
     };
 
     fetchGrowthData();
-  }, [interval]); 
+  }, [interval]);
 
   if (!growthData || growthData.length === 0) {
     return <div className="flex justify-center items-center">Loading...</div>;
@@ -69,19 +68,19 @@ const SalesGrowth = () => {
   };
 
   return (
-    <div className="md:p-4">
+    <div className="md:p-4 p-2">
       <a className="underline cursor-pointer" href="/">
         Go Back
       </a>
       <div className="my-3">
-        <label className=" md:text-xl" htmlFor="interval">
+        <label className="md:text-xl text-sm" htmlFor="interval">
           Select Interval:{" "}
         </label>
         <select
           id="interval"
           value={interval}
           onChange={(e) => setInterval(e.target.value)}
-          className="border p-1"
+          className="border md:p-1"
         >
           <option value="daily">Daily</option>
           <option value="monthly">Monthly</option>

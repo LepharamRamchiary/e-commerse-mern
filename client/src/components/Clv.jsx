@@ -65,7 +65,7 @@ const Clv = () => {
   };
 
   return (
-    <div className="md:p-6">
+    <div className="md:p-6 p-2">
       <a className="underline cursor-pointer" href="/">
         Go Back
       </a>

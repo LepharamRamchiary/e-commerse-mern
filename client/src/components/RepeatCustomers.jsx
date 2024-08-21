@@ -68,19 +68,19 @@ const RepeatCustomers = () => {
   };
 
   return (
-    <div className="md:p-4">
+    <div className="md:p-4 p-2">
       <a className="underline cursor-pointer" href="/">
         Go Back
       </a>
       <div className="my-3">
-        <label className=" md:text-xl" htmlFor="interval">
+        <label className="md:text-xl text-sm" htmlFor="interval">
           Select Interval:{" "}
         </label>
         <select
           id="interval"
           value={interval}
           onChange={(e) => setInterval(e.target.value)}
-          className="border p-1"
+          className="border md:p-1"
         >
           <option value="daily">Daily</option>
           <option value="monthly">Monthly</option>

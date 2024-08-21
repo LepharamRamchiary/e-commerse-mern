@@ -79,11 +79,11 @@ const GeographicalDistribution = () => {
   };
 
   return (
-    <div className="md:p-6">
+    <div className="md:p-6 p-2">
       <a className="underline cursor-pointer" href="/">
         Go Back
       </a>
-      <h2 className="md:text-xl">Geographical Distribution of Customers</h2>
+      <h2 className="md:text-xl text-sm">Geographical Distribution of Customers</h2>
       <Bar data={chartData} options={options} />
     </div>
   );
