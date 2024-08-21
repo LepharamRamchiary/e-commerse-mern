@@ -12,8 +12,8 @@ function Home() {
                 <a href="/salesgrowth">Sales Growth Rate Over Time</a>
                 <a href="/newcustomers">New Customers Added Over Time</a>
                 <a href="/repeatcustomers">Number of Repeat Customers</a>
-                <a href="#">Geographical Distribution of Customers</a>
-                <a href="clv">Customer Lifetime Value by Cohorts</a>
+                <a href="/gd">Geographical Distribution of Customers</a>
+                <a href="/clv">Customer Lifetime Value by Cohorts</a>
             </div>
         </div>
     </div>

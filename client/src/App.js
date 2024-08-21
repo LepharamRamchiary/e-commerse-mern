@@ -4,6 +4,7 @@ import Sales from "./components/Sales"
 import SalesGrowth from "./components/SalesGrowth";
 import NewCustomers from "./components/NewCustomers";
 import RepeatCustomers from "./components/RepeatCustomers";
+import GeographicalDistribution from "./components/GeographicalDistribution";
 import Clv from "./components/Clv";
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/newcustomers" element={<NewCustomers />} />
         <Route path="/repeatcustomers" element={<RepeatCustomers />} />
         <Route path="/clv" element={<Clv />} />
+        <Route path="/gd" element={<GeographicalDistribution />} />
       </Routes>
     </BrowserRouter>
   );
