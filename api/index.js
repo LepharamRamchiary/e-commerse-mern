@@ -7,7 +7,12 @@ import 'dotenv/config'
 // import { ShopifyCustomer } from "./models/customer.model.js"
 
 const app = express();
-app.use(cors())
+
+const corsOptions = {
+    origin: 'https://data-visualization-nd8t.onrender.com',
+};
+
+app.use(cors(corsOptions))
 app.use(express.json())
 const port = process.env.PORT || 5000;
 
